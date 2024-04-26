@@ -30,7 +30,8 @@
 			<div class="container container--lg">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
-						<img src="img/logotype-white.svg" width="146" height="50" alt="MEMOSHOME">
+						<img src="img/logotype-white.svg" width="146" height="50" alt="MEMOSHOME" class="white">
+						<img src="img/logotype.svg" width="146" height="50" alt="MEMOSHOME" class="default">
 					</a>
 					<nav class="nav header__nav">
 						<ul class="nav__list">
@@ -72,7 +73,7 @@
 						<a href="tel:+905466530707" class="header__link">+90 546 653 07 07</a>
 						<span class="header__help">Ежедневно 9:00 – 22:00</span>
 					</div>
-					<a href="#" class="header__btn btn btn--border">Заказать звонок</a>
+					<a href="#" class="header__btn btn btn--border modal-btn" data-id="modal-consultation">Заказать звонок</a>
 					<div class="header__select select-box">
 						<div class="select-box__placeholder">
 							<span>RU</span>
@@ -338,9 +339,11 @@
 							</form>
 						</div>
 					</div>
-					<picture class="main__bg">
-						<img src="img/main-bg.jpg" alt="Image">
-					</picture>
+					<div class="main__bg">
+						<video loop muted playsinline autoplay poster="img/main-bg.jpg">
+							<source src="video/main-bg.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
 			</section>
 			<!-- end of main -->
@@ -363,8 +366,8 @@
 					</div>
 					<div class="catalog__wrapper">
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-02.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-02.jpg" srcset="img/catalog-02@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -377,7 +380,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -416,8 +423,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item catalog__item--wide">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-03.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-03.jpg" srcset="img/catalog-03@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<div class="catalog-card__statuses">
 										<span class="catalog-card__status catalog-card__status--dark">premium villas</span>
@@ -433,7 +440,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -484,8 +495,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-04.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-04.jpg" srcset="img/catalog-04@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<div class="catalog-card__statuses">
 										<span class="catalog-card__status catalog-card__status--blue">новинка</span>
@@ -502,7 +513,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -541,8 +556,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-05.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-05.jpg" srcset="img/catalog-05@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -555,7 +570,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -594,8 +613,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-06.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-06.jpg" srcset="img/catalog-06@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -608,7 +627,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -668,8 +691,8 @@
 					</div>
 					<div class="catalog__wrapper">
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -682,7 +705,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -721,8 +748,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<div class="catalog-card__statuses">
 										<span class="catalog-card__status catalog-card__status--blue">новинка</span>
@@ -739,7 +766,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -778,8 +809,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -792,7 +823,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -831,8 +866,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<div class="catalog-card__statuses">
 										<span class="catalog-card__status catalog-card__status--blue">новинка</span>
@@ -849,7 +884,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -888,8 +927,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -902,7 +941,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -941,8 +984,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -955,7 +998,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1015,8 +1062,8 @@
 					</div>
 					<div class="catalog__wrapper">
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -1029,7 +1076,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1068,8 +1119,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<div class="catalog-card__statuses">
 										<span class="catalog-card__status catalog-card__status--blue">новинка</span>
@@ -1086,7 +1137,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1125,8 +1180,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -1139,7 +1194,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1178,8 +1237,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<div class="catalog-card__statuses">
 										<span class="catalog-card__status catalog-card__status--blue">новинка</span>
@@ -1196,7 +1255,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1235,8 +1298,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -1249,7 +1312,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1288,8 +1355,8 @@
 							</div>
 						</div>
 						<div class="catalog-card catalog__item">
-							<a href="#" class="catalog-card__img">
-								<img src="img/catalog-01.jpg" alt="Image">
+							<div class="catalog-card__img">
+								<img src="img/catalog-01.jpg" srcset="img/catalog-01@2x.jpg 2x" alt="Image">
 								<div class="catalog-card__top">
 									<button class="c-like catalog-card__like">
 										<div class="c-like__group">
@@ -1302,7 +1369,11 @@
 										</div>
 									</button>
 								</div>
-							</a>
+								<div class="catalog-card__buttons">
+									<a href="#" class="catalog-card__button btn btn--white">Выбрать планировку</a>
+									<a href="#" class="catalog-card__button btn btn--white">О проекте</a>
+								</div>
+							</div>
 							<div class="catalog-card__body">
 								<div class="catalog-card__inner">
 									<span class="catalog-card__location">Кестель</span>
@@ -1762,7 +1833,7 @@
 					<span class="menu__help">Ежедневно 9:00 – 22:00</span>
 				</div>
 				<div class="menu__inner">
-					<a href="#" class="menu__btn btn btn--border">Заказать звонок</a>
+					<a href="#" class="menu__btn btn btn--border modal-btn" data-id="modal-consultation">Заказать звонок</a>
 					<div class="menu__select select-box">
 						<div class="select-box__placeholder">
 							<span>RU</span>
@@ -3118,6 +3189,32 @@
 		</div>
 	</div>
 	<!-- end of filters -->
+	<!-- modals -->
+	<div class="modal" id="modal-consultation">
+		<div class="modal__wrap">
+			<div class="modal__wrapper">
+				<button class="modal__close" aria-label="Закрыть">
+					<svg>
+						<use xlink:href="img/sprite.svg#icon-close-medium"></use>
+					</svg>
+				</button>
+				<div class="modal__top">
+					<h3 class="modal__heading">Записаться на консультацию</h3>
+					<p class="modal__description">Укажите номер вашего телефона и наш менеджер свяжется с вами</p>
+				</div>
+				<form action="#" class="modal-form modal__form">
+					<div class="input-field modal-form__input">
+						<div class="input-field__inner">
+							<input type="text" id="quick-consultation-name" class="input-field__input" placeholder="Ваше имя">
+						</div>
+					</div>
+					<button class="modal-form__btn btn">Отправить</button>
+					<span class="modal-form__help">Оставляя заявку, вы соглашаетесь на обработку персональных данных</span>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end of modals -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
